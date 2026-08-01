@@ -1,46 +1,21 @@
-&#x20;python-bootcamp
+# Python Bootcamp Portfolio
 
+## Course Description
+A comprehensive programming bootcamp focusing on Python development and Git/GitHub version control.
 
+## Objectives
+- Learn Python programming and workflow management.
+- Manage repositories effectively using Git and GitHub.
 
-\# Python Bootcamp Portfolio
+## Labs Completed
+- Lab 1
+- Lab 2
+- Lab 3
+- Lab 4
+- Lab 5
 
+## Screenshots
+-
 
-
-
-
-
-
-\## Course Description
-
-
-
-This repository contains my work and projects completed during the Python Bootcamp.
-
-
-
-
-
-
-
-\## Objectives
-
-
-
-\- Learn Python programming.
-
-
-
-\- Understand problem solving.
-
-
-
-\- Practice Git and GitHub.
-
-
-
-\- Build Python projects.
-
-
-
-
-
+## License
+MIT License
