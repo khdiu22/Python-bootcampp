@@ -11,8 +11,8 @@ A comprehensive programming bootcamp focusing on Python development and Git/GitH
 - Lab 1
 - Lab 2
 - Lab 3
-- Lab 6
-- Lab 10
+- Lab 4
+- Lab 5
 
 ## Screenshots
 -
