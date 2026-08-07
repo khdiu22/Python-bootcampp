@@ -2,7 +2,6 @@ csv_line = "Ali,sarah,ahmad"
 names = csv_line.split(",")
 massages = "|".join(names)
 print(names)
-#ماهو الاليس
 sentence = input("Enter a sentence: ")
 num1 = int(input("Enter the first number: "))
 num2 = int(input("Enter the second number: ")) 
