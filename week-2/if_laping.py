@@ -89,6 +89,7 @@ else:
 
        
 # #Lap9
+
 # Score_text = input("Enter number between 0 and 100: ")
 # if Score_text.isdigit():
 #     score_x = int(Score_text)

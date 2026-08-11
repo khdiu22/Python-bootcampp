@@ -3,11 +3,11 @@ for attempts in range(3):
     print(f"Attempts: {attempts +1}")
     
 # lap2
-for num in range(2,11,2): # النهايه هنا 11
+for num in range(2,11,2): # النهايه هنا 10
     print(num)
     
 #Lap3
-for secondToLanch in range (10,0,-1):
+for secondToLanch in range (10,0,-1): #نبدا من 10 وونتهي 1  عد تنازلي
     print(f"t-{secondToLanch}")
     
 #Lap4
@@ -23,7 +23,7 @@ for student in students:
 #Lap 6
 for number in range(1,11):
     if number %2 == 0:
-        print(f"{number}is odd")
+        print(f"{number}is even")
         print("--------") 
         
 #lap7
@@ -56,13 +56,49 @@ age = int(age_text)
 print(f"you ard:{age}")
 
 
-#Lap11 #  الشرط غير صحيح  طالما المستخدم كتب بيكون باللوب حتى يكون فارغ ويطلع
-password = "python123"
+#Lap11 # **
+#This can be deletde bec it is redundant
+password = " "
+
 print("Please enter youer password :")
-while password != "":
+password = input("Please enter your password")
+while password != "1234":
   
-    password = input("Enter youer password:")
+    password = input("Incorrect password ,try agin :")
+print("Access Granted!")
+# Lap 12
+for score in [80,55,45,90]:
+    if score <50:
+        pass
+    print(f"if passed the{score}")
+    for record in [80,55,45,90]:
+        continue
+    print(f"if did not skip{record}")
+    for badscore in [80,55,45,90]:
+        if badscore <50:
+            break
+        print("we saw{badscore}")
+#lap 13
+for row in range(1,4):
+    for colum in range(1,4):
+        print(f"ROW: {row}, colum:{colum}")
 
+for row in range(1,4):
+    for colum in range(1,4):
+        print(f"{row}x{colum}={row * colum}")
+# lap 13,12 how to thinking like nested loop
+#row = 1
+    #colum = 1
+    #colum = 2
+    #colum = 3
 
+#row = 2
+    #colum = 1
+    #colum = 2
+    #colum = 3
 
+#row = 3
+    #colum = 1
+    #colum = 2
+    #colum = 3#
 

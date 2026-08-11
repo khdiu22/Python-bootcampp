@@ -70,9 +70,9 @@ if current_membership[0] == "E":
 #LAP7
 sentence = ["Python" , "web" ,  "development"]
 
-# new_sentence = sentence.find("web")
+# new_sentence = sentence.find("web") # غلط لان find  stringتاتي فقط مع ال 
 if "Python" in sentence:
-    print("Math found")
+    print("Macth found")
 else:
     print(" no match found")    
 #print(type(new_sentence))
@@ -86,14 +86,16 @@ last_char = message[-1]
 print(f"First character is {first_char} and last character is {last_char}")
 
 #Slicing 
-sliced_message = message[:6]
-print(sliced_message)
-reversed_message = message[::-1]
-print(reversed_message)
+sliced_message = message[:6] # 0 index to 5
+print(sliced_message) # = Python
+reversed_message = message[::-1] # ابدا من النهايه وارجع
+print(reversed_message) #= gnimmargorP nohtyP
 print(f"""Your message was {message}
 if we take the first 6 characters is will be {sliced_message}
 if we reverese it, it will be {reversed_message}
 """)
+
+
 #LAB9
 my_email = "user@example.com"
 cleaned_email = my_email.strip().lower()
@@ -104,7 +106,7 @@ print(f"Your formatted message is: {message}")
 
  #LAB 10
 csv_text = "apple,orange,banana,cherry,dates"
-splitted_text = csv_text.split(",")
+splitted_text = csv_text.split(",") # []
 print(sliced_message)
 joined_text = " - ".join(splitted_text)
 print(f"""Your list is {csv_text}
@@ -116,7 +118,7 @@ rejoned like this {joined_text}
 name = "Khalid"
 try:
     # strings are immutable; create a new string instead of assigning to an index
-    name = "A" + name[1:]
+    name = "A" + name[1:] #1 to end + 0 = A = Ahalid
 except TypeError as e:
     print(e)
 
