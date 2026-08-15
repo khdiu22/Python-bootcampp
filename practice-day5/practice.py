@@ -1,8 +1,8 @@
 from copy import deepcopy
 
 students = [
-    {"name": "Dalal", "scores": [80, 70, 90]},
-    {"name": "Ali", "scores": [40, 50, 55]},
+    {"name": "khdijah", "scores": [80, 70, 90]},
+    {"name": "dana", "scores": [40, 50, 55]},
     {"name": "Nora", "scores": [60, 75, 65]}
 ]
 report = [
