@@ -2,9 +2,7 @@
 # n = input("Enter your name: ") 
 # for letter in n: 
 #     print(letter) 
- 
- 
- 
+
 # ----list 
  
 # students = ['Sarah' , 'Omar' , 'Lina'] 
@@ -12,7 +10,7 @@
 # print(students) 
 # print(students[0]) 
 # print(type(students)) 
- 
+
 # 
  
 # colors = ['red' , 'green' , 'blue'] 
@@ -20,8 +18,7 @@
 # print(colors[1]) 
 # print(colors[-1]) 
 # print(colors[-3]) 
- 
-# # ---- 
+
  
 # numbers = [10 , 20 , 30 , 40 , 50] 
  
@@ -29,65 +26,66 @@
 # print(numbers[:3]) # [10 , 20 , 30] 
 # print(numbers[::2]) # [10 , 30 , 50] 
 # print(numbers[::-1]) #reversed 
- 
-# # ---- 
- 
+
+#Slicing
 # tasks = ["plan" , "code"] 
  
 # tasks[0] = "design" 
 # tasks.append("test") 
 # tasks.insert(1 , "review") 
 # print(tasks) 
- 
+
 # # ---- 
  
 # scores = [88 , 72 , 95 , 81] 
 # scores.remove(72) 
-# last = scores.pop() 
-# scores.sort() 
+# last = scores.pop() تحذف آخر عنصر من القائمة، وفي نفس الوقت تخزنه في متغير.
+# scores.sort() # ترتب من الاصغر الى الاكبر
  
 # print(scores) 
-# print(last) 
+# print(last) # 81
  
 # ---- 
-students = ["sara,","omar","lana"]
-for student in students:
-    print(student)
-for  student in enumerate (students): #تعداد
-    print (student)
+#students = ["sara,","omar","lana"]
+#for student in students:
+#    print(student)
+#for  student in enumerate (students): # index + value
+#    print (student)
 
 #students = ["sara,","omar","lana"]
 #for student in students:
 #    print(student)
-#for  index,student in enumerate (students): #تعداد
+#for  index,student in enumerate (students): # تنطبع بدون اقواس او ""
  #   print (index,student)
  
 # # ---- 
-# matrix = [ 
-#     [1 , 2 , 3], 
-#     [4 , 5 , 6] 
+matrix = [ 
+     [1 , 2 , 3], # index = 0
+     [4 , 5 , 6] # index =1
  
-# ] 
+ ] 
  
-# print(matrix[0]) 
-# print(matrix[1][2]) 
+print(matrix[0]) 
+print(matrix[1][2]) 
  
+
 # # ----tuble 
 # location = (24.7136 , 46.6753) 
  
 # print(location[0]) 
 # print(location[-1]) 
-# # location[0] = 30 
+# # location[0] = 30 # error
 # # ---- 
  
 # student = ("Sarah" , 22 , "Python" , True , 3) 
  
-# name , age , course , *outher = student 
+# name , age , course , *outher = student  #outer =الباقي الي ماكتبناه يضع في لست = [True,3]
 # print(name) 
 # print(age) 
 # print(course) 
-# print(outher) # unpacking 
+# print(outher) #   
  
+
 # # ----set 
  
 # skills = {"Python" , "Git" , "Python"} 
@@ -101,8 +99,8 @@ for  student in enumerate (students): #تعداد
 # backend = {"Python" , "Django" , "SQL"} 
 # frontend = {"HTML" , "CSS" , "JavaScript" , "SQL"} 
  
-# print(backend | frontend) #union 
-# print(backend & frontend) #intersection 
+# print(backend | frontend) #union  اجمع عناصر المجموعه بدون تكرار
+# print(backend & frontend) #intersection  تكرار
 # print(backend - frontend) #difference 
  
  
@@ -123,7 +121,7 @@ for  student in enumerate (students): #تعداد
 # student ["score"] = 95 
 # student ["grade"] = "A" 
  
-# email = student.get("email" , "Not set")  
+# email = student.get("email" , "Not set")  #دوري لي على المفتاح ايميل، وإذا ما لقيتيه عطيني "نوت سيت" بدل ما يطلع خطا
 # grade = student.pop("grade") 
  
 # print(student) 
@@ -163,9 +161,7 @@ for  student in enumerate (students): #تعداد
 # for student in students: 
 #     print(student["name"] , student["score"]) 
 
-#pop تحذف
-# git تاخذ تو ارقيومنت هي نفس الاندكس
-#next
+
 
 
 

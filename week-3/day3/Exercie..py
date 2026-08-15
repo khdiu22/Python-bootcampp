@@ -20,21 +20,20 @@ students = [
 for student in students:
     total = 0 
 
-    for score in student["scores"]:
-        total += score
-
+    for score in student["scores"]:   #في كل دوره الفور تعطي  السكور قيمه السكورز  
+    
+        total += score #95+0=95
+        #90+95=
+       
     average = total /len(student["scores"])
 
-    student["average"] = average 
+    student["average"] = average # add average to Dictionar
     
-    student["skills"].add("Git")
+    student["skills"].add("Git") #add git to (skills)
 
 
 for student in students:
     print("Name:", student["name"])
     print(f"average: {student['average']:.2f}")
     print("Skills:", student["skills"])
-
-
-
 
