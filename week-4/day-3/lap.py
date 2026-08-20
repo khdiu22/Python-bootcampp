@@ -112,19 +112,12 @@ class Student:
     def __init__(self, name):
         self.name = name
         self.score = [] 
-        # ❌ الخطأ السابق:
-        # ما كان فيه تعريف لـ __enrolled
-        # لذلك نعرّفه من البداية
         self.__enrolled = False
     def add_score(self, score):
         if score < 0 or score > 100:
             raise ValueError("Score must be between 0 and 100")
         self.score.append(score)
 
-    # ❌ الخطأ السابق:
-    # كنتِ تستخدمين getEnrollment() و setEnorllment()
-    # بدل @property و @enrolled.setter
-    # ✅ Getter
     @property
     def enrolled(self):
         return self.__enrolled
@@ -143,18 +136,8 @@ student.add_score(80)
 student.add_score(90)
 student.add_score(100)
 print(student.average)
-# ✅ صحيح: لأننا استخدمنا @property
-# لذلك لا نحتاج () مع average
 student.enrolled = True
-# ❌ الخطأ السابق:
-# كنتِ تكتبين student.enrolled = True
-# بدون @enrolled.setter
-# فكان ينشئ متغير جديد اسمه enrolled
-#
-# ✅ الآن صحيح لأن عندنا @enrolled.setter
-
 print(student.enrolled)
-# ✅ صحيح: @property تسمح لنا بقراءة enrolled بدون ()
 print(student.score)
 
 
