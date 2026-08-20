@@ -122,7 +122,7 @@ class Student:
     def enrolled(self):
         return self.__enrolled
 
-    # ✅ Setter
+    # Setter
     @enrolled.setter
     def enrolled(self, status):
         self.__enrolled = status
