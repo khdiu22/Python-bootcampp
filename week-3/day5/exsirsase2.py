@@ -5,6 +5,7 @@ total = sum(
     for number in numbers
 )
 print(total)
+
 numbers = range(1,11)
 sum = total( 
     number **3 #3
@@ -12,8 +13,9 @@ sum = total(
     if number %2 !=0 #2
 )
 print(total)
-#shallow copy بنسخ وبتتعدل القائمه الداخليه والخارجيه
-# لو عدلت على الداخليه بتتعدل الخارجيه والعكس لا 
+
+#shallow copy تعديل  الخارجيه يتغير الكلون فقط  اما الداخليه يتغير الاورجنل والكلون
+
 original =["python","git"]
 clone = original.copy()
 clone.append("django") #دخلنا للقاءمه الخارجيه
@@ -21,9 +23,6 @@ print(original)
 print(clone)
 print(original is clone) # false
 #######################################
-original =[";adi","git"]
-clone=original.copy()
-clone.append("danjo")
 
 original =[["sara",90],["omar",85]]
 clone = original.copy() #تنسخ القائمه الخارجيه فقط
@@ -47,7 +46,7 @@ print(original[0] is clone[0]) # False
 # set = 0(1)
 #list =0(n)
 names = ["sara","omar","lana"]
-# searches items one by one o(on)بيمر عليهم كلهم
+# searches items one by one o(n)بيمر عليهم كلهم
 print("lana" in names)
 name_set = set(names) # تحويل اللست الى سيت
 print("lina"in name_set)

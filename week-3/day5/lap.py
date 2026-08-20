@@ -75,15 +75,17 @@ counted_chars =[
 ]
 print(counted_chars)
 ##########################################################################################################################3
-#lap9
+#lap9 Generator Expression
 new_name =["mada","Khdijah","Yamam","Mashael"]
 upp =(
     name.upper()
     for name in new_name
 )
-#print(list(upp))#
+#print(list(upp))#لاننا  استخدمنا جنريتر 
 print(next(upp)) #print+remove
-print(next(upp))
+print(next(upp)) #we use it in generator expression
+
 print("-"*5)
-for x in upp:
+for x in upp: #يبدا من عند ما انتهينا
     print(x)
+#لو حطيت نكست والعناصر خلصت بيطلع ايرور مارح يطلع لي اياها كامله

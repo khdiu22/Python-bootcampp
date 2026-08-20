@@ -37,3 +37,8 @@ for student in students:
     print(f"average: {student['average']:.2f}")
     print("Skills:", student["skills"])
 
+
+
+
+
+

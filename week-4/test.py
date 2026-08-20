@@ -28,6 +28,3 @@ number=[1,2,3]
 num_new=[numbers*2 for numbers in number]
 print(num_new)
 
-
-b
-

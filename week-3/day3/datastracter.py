@@ -10,7 +10,7 @@
 # print(students) 
 # print(students[0]) 
 # print(type(students)) 
-
+#student[0]="khdijah"
 # 
  
 # colors = ['red' , 'green' , 'blue'] 
@@ -21,13 +21,12 @@
 
  
 # numbers = [10 , 20 , 30 , 40 , 50] 
- 
 # print(numbers[1:4]) # [20 , 30 , 40] 
 # print(numbers[:3]) # [10 , 20 , 30] 
 # print(numbers[::2]) # [10 , 30 , 50] 
 # print(numbers[::-1]) #reversed 
-
 #Slicing
+
 # tasks = ["plan" , "code"] 
  
 # tasks[0] = "design" 
@@ -41,20 +40,22 @@
 # scores.remove(72) 
 # last = scores.pop() تحذف آخر عنصر من القائمة، وفي نفس الوقت تخزنه في متغير.
 # scores.sort() # ترتب من الاصغر الى الاكبر
- 
 # print(scores) 
 # print(last) # 81
  
 # ---- 
+
 #students = ["sara,","omar","lana"]
 #for student in students:
 #    print(student)
+
 #for  student in enumerate (students): # index + value
 #    print (student)
 
 #students = ["sara,","omar","lana"]
 #for student in students:
-#    print(student)
+#    print(student) 
+
 #for  index,student in enumerate (students): # تنطبع بدون اقواس او ""
  #   print (index,student)
  
@@ -67,7 +68,7 @@ matrix = [
  
 print(matrix[0]) 
 print(matrix[1][2]) 
- 
+
 
 # # ----tuble 
 # location = (24.7136 , 46.6753) 
