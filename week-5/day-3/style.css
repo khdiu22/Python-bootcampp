@@ -1,0 +1,17 @@
+p{
+    color: red;
+    font-size: 99px;
+}
+
+
+
+#main-note{
+    color: brown;
+}
+
+#main-note:hover{
+    color: blueviolet;
+}
+style{
+    
+}
