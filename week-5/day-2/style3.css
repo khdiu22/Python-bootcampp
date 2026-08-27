@@ -1,0 +1,264 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #fff7fa;
+    color: #4a2435;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(135deg, #c21868, #e83e8c);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    box-shadow: 0 4px 20px rgba(194, 24, 104, 0.25);
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffe1ed;
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+#home {
+    background: linear-gradient(135deg, #ffffff, #fff1f6);
+}
+
+#about {
+    background-color: #fff7fa;
+}
+
+#contact {
+    background: #ffffff;
+}
+
+/* Paragraphs */
+p {
+    font-size: 18px;
+    margin: 25px auto;
+    max-width: 700px;
+    color: #684052;
+}
+
+/* List */
+ul {
+    list-style-type: square;
+    background: #ffffff;
+    padding: 22px 35px;
+    width: 320px;
+    max-width: 90%;
+    margin: 30px auto;
+    border-radius: 14px;
+    border: 1px solid #f5c2d7;
+    box-shadow: 0 8px 25px rgba(194, 24, 104, 0.08);
+    text-align: left;
+}
+
+ul li {
+    padding: 9px 0;
+    color: #633449;
+    font-weight: 500;
+}
+
+/* Cards Container */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+    gap: 28px;
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+/* Cards */
+.card {
+    position: relative;
+    background: linear-gradient(145deg, #ffffff, #fff5f9);
+    padding: 35px 30px;
+    min-height: 210px;
+    border-radius: 18px;
+    border: 1px solid #f4c4d7;
+    box-shadow: 0 8px 25px rgba(194, 24, 104, 0.10);
+    transition: all 0.35s ease;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #e83e8c;
+    box-shadow: 0 15px 35px rgba(194, 24, 104, 0.18);
+}
+
+.card h3 {
+    color: #c21868;
+    margin: 0 0 14px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.card p {
+    margin: 0;
+    font-size: 16px;
+    color: #795164;
+    line-height: 1.7;
+}
+
+/* YouTube Link */
+a[href="https://www.youtube.com/"] {
+    display: inline-block;
+    margin: 25px auto;
+    padding: 13px 30px;
+    background: linear-gradient(135deg, #e83e8c, #c21868);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 9px;
+    font-weight: 600;
+    box-shadow: 0 6px 18px rgba(194, 24, 104, 0.22);
+    transition: all 0.3s ease;
+}
+
+a[href="https://www.youtube.com/"]:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(194, 24, 104, 0.30);
+}
+
+/* Image */
+img {
+    display: block;
+    width: 350px;
+    max-width: 90%;
+    height: auto;
+    margin: 35px auto;
+    padding: 5px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #f4c4d7;
+    box-shadow: 0 10px 30px rgba(194, 24, 104, 0.15);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 22px auto;
+    }
+
+    ul {
+        width: 75%;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        width: 85%;
+        gap: 22px;
+    }
+
+    .card {
+        min-height: 180px;
+        padding: 28px 22px;
+    }
+
+    .card h3 {
+        font-size: 21px;
+    }
+
+    .card p {
+        font-size: 15px;
+    }
+
+    a[href="https://www.youtube.com/"] {
+        width: 70%;
+    }
+
+    img {
+        width: 80%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    nav {
+        gap: 9px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 35px 10px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    ul {
+        width: 85%;
+    }
+
+    .features-grid {
+        width: 90%;
+        gap: 18px;
+    }
+
+    .card {
+        min-height: 170px;
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    .card h3 {
+        font-size: 19px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 90%;
+        border-radius: 15px;
+    }
+}
