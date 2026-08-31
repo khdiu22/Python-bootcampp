@@ -158,4 +158,8 @@ button:hover {
   button {
     width: 100%;
   }
+  
+}.services {
+  display: root;
+  grid-template-columns: repeat(2, 1fr);
 }
