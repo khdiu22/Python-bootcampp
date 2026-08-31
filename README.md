@@ -57,8 +57,4 @@
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khdiu22&layout=compact&theme=dracula&hide_border=true&text_color=f8f9fa&bg_color=4a148c&border_radius=10" alt="Top Languages" />
 </div>
 
----
 
-<div align="center">
-  <i>"Code like a girl: with passion, precision, and style."</i> 💖
-</div>
