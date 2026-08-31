@@ -13,7 +13,7 @@
 
 ---
 
-### 💻 Tech Stack & Tools
+### 🛠️ Tech Stack & Tools
 
 <p align="center">
   <!-- Languages & Frontend -->
@@ -39,15 +39,15 @@
 
 ---
 
-### 📊 GitHub Stats & Top Languages
+### 📊 GitHub Stats
 
-<p align="center">
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=khdiu22&show_icons=true&theme=radical&hide_border=true&bg_color=151515" alt="GitHub Stats" />
-</p>
+</div>
 
-<p align="center">
+<div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khdiu22&layout=compact&theme=radical&hide_border=true&bg_color=151515" alt="Top Languages" />
-</p>
+</div>
 
 ---
 
