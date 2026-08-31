@@ -30,17 +30,15 @@
 
 ---
 
-### 📊 GitHub Stats
+### 📊 Quick Overview & Top Languages
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=khdiu22&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats" />
-</div>
-
-<br>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khdiu22&layout=compact&theme=dracula&hide_border=true" alt="Top Languages" />
-</div>
+| Category | Details & Technologies |
+| :--- | :--- |
+| **Primary Language** | 🐍 Python (Object-Oriented Programming, Data Validation, Backend) |
+| **Web Technologies** | 🌐 HTML5, CSS3, Responsive Design |
+| **Frameworks** | ⚙️ Django & Flask |
+| **Version Control** | 📦 Git & GitHub |
+| **Current Focus** | 🚀 Tuwaiq Academy Projects & Full-Stack Development |
 
 ---
 
