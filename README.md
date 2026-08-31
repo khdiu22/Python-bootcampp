@@ -43,5 +43,5 @@
 ---
 
 <div align="center">
-  <i>"Building the future, one line of code at a time💻!"</i> 
+  <i>Building the future, one line of code at a time💻!</i> 
 </div>
