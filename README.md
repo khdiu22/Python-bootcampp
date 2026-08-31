@@ -36,12 +36,12 @@
 | :--- | :--- |
 | **Primary Language** | 🐍 Python (Object-Oriented Programming, Data Validation, Backend) |
 | **Web Technologies** | 🌐 HTML5, CSS3, Responsive Design |
-| **Frameworks** | ⚙️ Django & Flask |
+| **Frameworks** | ⚙️ Django |
 | **Version Control** | 📦 Git & GitHub |
-| **Current Focus** | 🚀 Tuwaiq Academy Projects & Full-Stack Development |
+| **Current Focus** |  💻Tuwaiq Academy Projects & Full-Stack Development |
 
 ---
 
 <div align="center">
-  <i>"Code like a girl: with passion, precision, and style."</i> 💖
+  <i>"Building the future, one line of code at a time💻!"</i> 
 </div>
