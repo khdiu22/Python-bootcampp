@@ -1,22 +1,7 @@
-
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=4a148c&height=180&section=header&text=Khadijah%20✨&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Web%20Developer%20&%20Programmer&descSize=20&descColor=ce93d8" alt="Welcome Banner" />
 
-</div>
-
-<div align="center">
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=khdiu22&color=ab47bc&style=for-the-badge" alt="Profile Visitor Count" />
-</p>
-
-</div>
-
----
-
-<div align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="300" alt="Coding Girl Animation">
 </div>
 
 ---
@@ -48,13 +33,17 @@
 ### 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=khdiu22&show_icons=true&theme=dracula&include_all_commits=true&count_private=true&hide_border=true&text_color=f8f9fa&bg_color=4a148c&ring_color=ab47bc&border_radius=10" alt="Khadijah's GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=khdiu22&show_icons=true&theme=dracula&hide_border=true" alt="GitHub Stats" />
 </div>
 
 <br>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khdiu22&layout=compact&theme=dracula&hide_border=true&text_color=f8f9fa&bg_color=4a148c&border_radius=10" alt="Top Languages" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=khdiu22&layout=compact&theme=dracula&hide_border=true" alt="Top Languages" />
 </div>
 
+---
 
+<div align="center">
+  <i>"Code like a girl: with passion, precision, and style."</i> 💖
+</div>
