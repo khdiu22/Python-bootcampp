@@ -1,0 +1,18 @@
+{% extends 'libary/base.html' %}
+
+{% block title %}Books{% endblock %}
+
+{% block content %}
+
+<h1>Book List</h1>
+
+{% for book in books %}
+    <h2>
+        <a href="{% url 'book_detail' book.id %}">
+            {{ book.title }}
+        </a>
+    </h2>
+    <p>{{ book.author }}</p>
+    <p>Year: {{ book.year }}</p>
+{% endfor %}
+{% endblock %}
