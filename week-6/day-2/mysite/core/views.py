@@ -1,13 +1,13 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Hello from Home")
 
-def about(request):
-    return HttpResponse("Hello from About")
+def index(request):
+    return render(request, 'pages/index.html')
 
-def contact(request):
-    return HttpResponse("Hello from Contact")
 
-# Create your views here.
+def faq(request):
+    return render(request, 'pages/faq.html')
+
+
+def team(request):
+    return render(request, 'pages/team.html')
