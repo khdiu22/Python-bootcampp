@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+
+    <h1>Dashboard Home</h1>
+
+    <a href="{% url 'dashboard:reports' %}">Reports</a>
+    <br><br>
+
+    <a href="{% url 'users:login' %}">Users</a>
+    <br><br>
+
+    <a href="{% url 'courses:list' %}">Courses</a>
+    <br><br>
+
+    <a href="{% url 'payments:checkout' %}">Payments</a>
+
+</body>
+</html>
+

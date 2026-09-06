@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+</head>
+<body>
+
+    <h1>Courses List</h1>
+
+    <ul>
+        <li>
+            <a href="{% url 'courses:detail' slug='python' %}">Python</a>
+        </li>
+        <li>
+            <a href="{% url 'courses:detail' slug='django' %}">Django</a>
+        </li>
+        <li>
+            <a href="{% url 'courses:detail' slug='javascript' %}">JavaScript</a>
+        </li>
+    </ul>
+
+</body>
+</html>
+
+
