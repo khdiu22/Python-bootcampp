@@ -1,0 +1,21 @@
+{% extends 'page/base.html' %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ page_title }}</h1>
+    <p>Total products: {{ products|length }}</p>
+
+    {% if products %}
+        <div class="cards-grid">
+            {% for product in products %}
+                {% include 'page/includes/card.html' with product=product %}
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="empty-state">
+            <p>No products found. Please check back soon!</p>
+            <a href="{% url 'page:products' %}">Refresh</a>
+        </div>
+    {% endif %}
+{% endblock %}

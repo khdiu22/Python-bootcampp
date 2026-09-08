@@ -1,0 +1,9 @@
+{% extends 'page/base.html' %}
+
+{% block title %}{{ page_title }}{% endblock %}
+
+{% block content %}
+    <h1>{{ welcome_message }}</h1>
+    <p>Find great deals on electronics, books, and accessories, all in one place.</p>
+    <p>Browse our <a href="{% url 'page:products' %}">latest products</a> and start shopping today.</p>
+{% endblock %}

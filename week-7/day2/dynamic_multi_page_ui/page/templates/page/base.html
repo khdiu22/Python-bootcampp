@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}ShopEasy{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'page/style.css' %}">
+</head>
+<body>
+
+    {% include 'page/includes/navbar.html' %}
+
+    <main class="content">
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 ShopEasy - All rights reserved</p>
+    </footer>
+
+</body>
+</html>

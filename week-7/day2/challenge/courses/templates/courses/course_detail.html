@@ -1,0 +1,25 @@
+{% extends "courses/base.html" %}
+{% load static %}
+
+{% block title %}{{ course.name|title }}{% endblock %}
+
+{% block content %}
+    <div class="course-detail">
+        <img src="{% static 'courses/images/'|add:course.image %}" alt="{{ course.name|title }}">
+
+        <h1>{{ course.name|title }}</h1>
+        <p class="level">Level: {{ course.level }}</p>
+
+        {% if course.trusted %}
+            <p class="description">{{ course.description|safe }}</p>
+        {% else %}
+            <p class="description">{{ course.description|truncatewords:30 }}</p>
+        {% endif %}
+
+        {% if course.student_count == 0 %}
+            <p class="students empty">No students enrolled yet. Be the first!</p>
+        {% else %}
+            <p class="students">{{ course.student_count }} students enrolled</p>
+        {% endif %}
+    </div>
+{% endblock %}

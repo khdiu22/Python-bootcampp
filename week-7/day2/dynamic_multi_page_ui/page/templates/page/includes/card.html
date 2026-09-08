@@ -1,0 +1,12 @@
+{# reusable card component - receives "product" when included #}
+<div class="card">
+    <h3>{{ product.name|title }}</h3>
+    <p class="card-category">{{ product.category }}</p>
+    <p class="card-price">${{ product.price|floatformat:2 }}</p>
+
+    {% if product.stock > 0 %}
+        <span class="badge badge-available">In stock ({{ product.stock }})</span>
+    {% else %}
+        <span class="badge badge-out">Out of stock</span>
+    {% endif %}
+</div>
