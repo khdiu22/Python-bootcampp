@@ -11,6 +11,8 @@ body {
     color: #1f1b2d;
     min-height: 100vh;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
@@ -59,6 +61,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 70px 0;
+    flex: 1;
 }
 
 .content h1 {
@@ -205,7 +208,7 @@ body {
     padding: 28px;
     background: #211b35;
     color: #d9d5e7;
-    margin-top: 70px;
+    margin-top: auto;
     font-size: 14px;
 }
 
@@ -250,3 +253,4 @@ body {
         font-size: 28px;
     }
 }
+

@@ -1,0 +1,256 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f5f3ff;
+    color: #1f1b2d;
+    min-height: 100vh;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #5b4ee8, #7c3aed);
+    padding: 18px 8%;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    box-shadow: 0 8px 25px rgba(91, 78, 232, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: white;
+    left: 50%;
+    bottom: -7px;
+    transform: translateX(-50%);
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #eeeaff;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+    flex: 1;
+}
+
+.content h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #211b35;
+    letter-spacing: -1px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.course-card {
+    background: #ffffff;
+    border: 1px solid #ebe7ff;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 10px 35px rgba(53, 43, 100, 0.08);
+    transition: all 0.35s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.course-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #6c63ff, #a855f7);
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(91, 78, 232, 0.16);
+    border-color: #dcd6ff;
+}
+
+.course-card:hover::before {
+    opacity: 1;
+}
+
+.course-card img,
+.course-detail img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 18px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.course-card:hover img {
+    transform: scale(1.03);
+}
+
+.course-card h2 {
+    font-size: 21px;
+    font-weight: 750;
+    color: #211b35;
+    margin-bottom: 8px;
+}
+
+.level {
+    color: #77728b;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.students {
+    display: inline-block;
+    background: #ecfdf3;
+    color: #15803d;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.students.empty {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.details-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    background: linear-gradient(135deg, #6c63ff, #7c3aed);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(108, 99, 255, 0.25);
+    transition: all 0.3s ease;
+}
+
+.details-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(108, 99, 255, 0.35);
+    background: linear-gradient(135deg, #5548e8, #6d28d9);
+}
+
+.course-detail {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 22px;
+    max-width: 700px;
+    margin: 0 auto;
+    border: 1px solid #ebe7ff;
+    box-shadow: 0 15px 45px rgba(53, 43, 100, 0.1);
+}
+
+.course-detail img {
+    height: 300px;
+}
+
+.course-detail h1 {
+    font-size: 34px;
+    color: #211b35;
+    margin-bottom: 18px;
+}
+
+.course-detail p {
+    color: #625d72;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.footer {
+    text-align: center;
+    padding: 28px;
+    background: #211b35;
+    color: #d9d5e7;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 16px 5%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .navbar a {
+        font-size: 14px;
+    }
+
+    .content {
+        width: 92%;
+        padding: 45px 0;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+    .course-detail {
+        padding: 20px;
+    }
+
+    .course-detail img {
+        height: 220px;
+    }
+
+    .course-detail h1 {
+        font-size: 28px;
+    }
+}
+
