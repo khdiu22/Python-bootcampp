@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Course Catalog{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'courses/style.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="{% url 'courses:course_list' %}" class="brand"> Parameter-Aware Catalog</a>
+        </div>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>Guided Lab &mdash; built with Django, request.GET, and {% templatetag openblock %} url {% templatetag closeblock %}.</p>
+        </div>
+    </footer>
+</body>
+</html>

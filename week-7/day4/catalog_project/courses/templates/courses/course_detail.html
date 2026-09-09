@@ -1,0 +1,42 @@
+{% extends "courses/base.html" %}
+
+{% block title %}{{ course.title }}{% endblock %}
+
+{% block content %}
+    <a href="{% url 'courses:course_list' %}" class="back-link">&larr; Back to catalog</a>
+
+    <div class="course-card-tags">
+        <span class="tag tag-category">{{ course.category|title }}</span>
+        <span class="tag tag-difficulty tag-{{ course.difficulty }}">{{ course.difficulty|title }}</span>
+    </div>
+
+    <h1>{{ course.title }}</h1>
+    <p class="course-description">{{ course.description }}</p>
+
+    
+    <nav class="tabs">
+        {% for tab in tabs %}
+            <a class="tab-link {% if active_tab == tab %}active{% endif %}"
+               href="{% url 'courses:course_detail' course.id %}?tab={{ tab }}">
+                {{ tab|title }}
+            </a>
+        {% endfor %}
+    </nav>
+
+    <div class="tab-panel">
+        {% if active_tab == "details" %}
+            <h2>Details</h2>
+            <ul class="detail-list">
+                <li><strong>Category:</strong> {{ course.category|title }}</li>
+                <li><strong>Difficulty:</strong> {{ course.difficulty|title }}</li>
+                <li><strong>Instructor:</strong> {{ course.instructor }}</li>
+            </ul>
+        {% elif active_tab == "syllabus" %}
+            <h2>Syllabus</h2>
+            <p>{{ course.syllabus }}</p>
+        {% elif active_tab == "instructor" %}
+            <h2>Instructor</h2>
+            <p>This course is taught by <strong>{{ course.instructor }}</strong>.</p>
+        {% endif %}
+    </div>
+{% endblock %}
