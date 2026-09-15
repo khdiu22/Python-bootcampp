@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preferences & Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background-color: {% if theme == 'dark' %}#222{% else %}#fff{% endif %};
+            color: {% if theme == 'dark' %}#fff{% else %}#000{% endif %};
+        }
+        .box {
+            border: 1px solid #888;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 6px;
+        }
+        button, a.btn {
+            display: inline-block;
+            margin: 5px 5px 5px 0;
+            padding: 8px 16px;
+            text-decoration: none;
+            border: 1px solid #888;
+            border-radius: 4px;
+            color: inherit;
+            background-color: transparent;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preferences & Cart</h1>
+
+    <div class="box">
+        <strong>Current theme:</strong> {{ theme }}<br>
+        <a class="btn" href="{% url 'set_theme' %}?theme=light">Light</a>
+        <a class="btn" href="{% url 'set_theme' %}?theme=dark">Dark</a>
+    </div>
+
+    <div class="box">
+        <strong>Cart items:</strong> {{ cart_count }}<br>
+        <p>{{ cart }}</p>
+        <a class="btn" href="{% url 'add_to_cart' %}?product_id=101">Add product 101</a>
+        <a class="btn" href="{% url 'clear_cart' %}">Clear cart</a>
+    </div>
+</body>
+</html>
